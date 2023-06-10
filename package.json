@@ -1,0 +1,27 @@
+{
+  "name": "web3-fortmatic",
+  "version": "1.0.1",
+  "license": "MIT",
+  "repository": "",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist/*"
+  ],
+  "type": "commonjs",
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+  "exports": "./dist/index.js",
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "tsc",
+    "start": "tsc --watch"
+  },
+  "dependencies": {
+    "@ethersproject/experimental": "^5.7.0",
+    "@ethersproject/providers": "^5.7.1",
+    "@web3-react/types": "8.0.20-beta.0",
+    "fortmatic": "^2.4.0"
+  }
+}
